@@ -32,11 +32,11 @@ else:
     st.success('CSV file successfully uploaded.', icon=':material/verified:')
 
 # Load the pre-trained models from the pickle files
-rf_pickle = open('fetal_health_1.pickle', 'rb') 
+rf_pickle = open('fetal_health_0.pickle', 'rb') 
 clf_rf = pickle.load(rf_pickle) 
 rf_pickle.close()
 
-dt_pickle = open('fetal_health_0.pickle', 'rb') 
+dt_pickle = open('fetal_health_1.pickle', 'rb') 
 clf_dt = pickle.load(dt_pickle) 
 dt_pickle.close()
 
