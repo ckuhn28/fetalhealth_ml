@@ -128,9 +128,9 @@ if uploaded_file is not None:
     with tab1:
         st.write("### Feature Importance")
         if ml_type == "Random Forest":
-            st.image('feature_imp_1.svg')
-        elif ml_type == "Decision Tree":
             st.image('feature_imp_0.svg')
+        elif ml_type == "Decision Tree":
+            st.image('feature_imp_1.svg')
         elif ml_type == "AdaBoost":
             st.image('feature_imp_2.svg')
         else:
@@ -140,9 +140,9 @@ if uploaded_file is not None:
     with tab2:
         st.write("### Confusion Matrix")
         if ml_type == "Random Forest":
-            st.image('confusion_mat_1.svg')
-        elif ml_type == "Decision Tree":
             st.image('confusion_mat_0.svg')
+        elif ml_type == "Decision Tree":
+            st.image('confusion_mat_1.svg')
         elif ml_type == "AdaBoost":
             st.image('confusion_mat_2.svg')
         else:
@@ -152,9 +152,9 @@ if uploaded_file is not None:
     with tab3:
         st.write("### Classification Report")
         if ml_type == "Random Forest":
-            report_df = pd.read_csv('class_report_1.csv', index_col = 0).transpose()
-        elif ml_type == "Decision Tree":
             report_df = pd.read_csv('class_report_0.csv', index_col = 0).transpose()
+        elif ml_type == "Decision Tree":
+            report_df = pd.read_csv('class_report_1.csv', index_col = 0).transpose()
         elif ml_type == "AdaBoost":
             report_df = pd.read_csv('class_report_2.csv', index_col = 0).transpose()
         else:
